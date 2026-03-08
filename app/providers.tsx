@@ -1,0 +1,18 @@
+"use client";
+
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+
+export function Providers({ children }: { children: React.ReactNode }) {
+  return (
+    <NextThemesProvider
+      attribute="data-theme"
+      defaultTheme="dark"
+      enableSystem={false}
+      disableTransitionOnChange={false}
+      storageKey="portfolio-theme"
+      themes={["light", "dark"]}
+    >
+      {children}
+    </NextThemesProvider>
+  );
+}
