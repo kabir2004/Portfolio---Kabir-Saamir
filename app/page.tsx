@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Code2 } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
@@ -46,10 +46,9 @@ export default function Home() {
                 hi, this is a space showcasing my work. currently an engineer based in toronto.
               </p>
               <div className="flex flex-wrap gap-3 sm:gap-4 sm:justify-end mt-4 text-sm font-mono text-text-tertiary">
-                <a href="https://linkedin.com/in/kabir-saamir" target="_blank" className="hover:text-text-primary transition-colors">LinkedIn</a>
-                <a href="https://github.com/saamirkabir" target="_blank" className="hover:text-text-primary transition-colors">GitHub</a>
-                <a href="https://twitter.com" target="_blank" className="hover:text-text-primary transition-colors">Twitter / X</a>
-                <a href="mailto:kabirsaamir@gmail.com" className="hover:text-text-primary transition-colors">Email</a>
+                <a href="https://www.linkedin.com/in/kabir-saamir-6890b2246" target="_blank" className="hover:text-text-primary transition-colors">LinkedIn</a>
+                <a href="https://github.com/kabir2004" target="_blank" className="hover:text-text-primary transition-colors">GitHub</a>
+<a href="mailto:kabir.saamir@gmail.com" className="hover:text-text-primary transition-colors">Email</a>
               </div>
             </div>
           </div>
@@ -129,7 +128,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex items-center justify-between text-text-tertiary group-hover:text-text-secondary transition-colors mt-auto pt-4">
-                <Github size={16} />
+                <Code2 size={16} />
                 <ArrowUpRight size={16} />
               </div>
             </div>
@@ -143,7 +142,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex items-center justify-between text-text-tertiary group-hover:text-text-secondary transition-colors mt-auto pt-4">
-                <Github size={16} />
+                <Code2 size={16} />
                 <ArrowUpRight size={16} />
               </div>
             </div>
@@ -157,7 +156,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex items-center justify-between text-text-tertiary group-hover:text-text-secondary transition-colors mt-auto pt-4">
-                <Github size={16} />
+                <Code2 size={16} />
                 <ArrowUpRight size={16} />
               </div>
             </div>
@@ -171,7 +170,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex items-center justify-between text-text-tertiary group-hover:text-text-secondary transition-colors mt-auto pt-4">
-                <Github size={16} />
+                <Code2 size={16} />
                 <ArrowUpRight size={16} />
               </div>
             </div>
