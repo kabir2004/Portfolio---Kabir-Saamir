@@ -122,7 +122,7 @@ export default function Home() {
             {/* Project Item */}
             <div className="group flex flex-col gap-4 cursor-pointer relative">
               <div>
-                <h3 className="font-medium group-hover:text-text-primary transition-colors">Grum</h3>
+                <h3 className="font-medium group-hover:text-text-primary transition-colors">Spore</h3>
                 <p className="text-sm text-text-secondary mt-1 leading-relaxed">
                   A desktop productivity app that aggregates Gmail, Documents, Calendar, Messages, and more into one unified workspace.
                 </p>
