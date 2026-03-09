@@ -56,7 +56,7 @@ export default function RootLayout({
                   if (theme === 'light' || theme === 'dark') {
                     document.documentElement.setAttribute('data-theme', theme);
                   } else {
-                    document.documentElement.setAttribute('data-theme', 'dark');
+                    document.documentElement.setAttribute('data-theme', 'light');
                   }
                 } catch (e) {}
                 requestAnimationFrame(function() {

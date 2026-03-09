@@ -1,39 +1,39 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #000;
-  --color-foreground: #ededed;
+  --color-background: #f8f8f8;
+  --color-foreground: #0c0c0c;
 
-  --color-text-primary: #ededed;
-  --color-text-secondary: #a1a1aa;
-  --color-text-tertiary: #71717a;
+  --color-text-primary: #0c0c0c;
+  --color-text-secondary: #525252;
+  --color-text-tertiary: #737373;
 
-  --color-border: #27272a;
-  --color-hover: #18181b;
-  --color-bg-subtle: #18181b;
-  --color-hover-bg: #27272a;
+  --color-border: #e4e4e7;
+  --color-hover: #f4f4f5;
+  --color-bg-subtle: #ebebeb;
+  --color-hover-bg: #e0e0e0;
 
   --font-sans: system-ui, sans-serif;
   --font-mono: ui-monospace, monospace;
 }
 
-/* Dark is default — set browser chrome (scrollbars, inputs) */
+/* Light is default */
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
-/* Light theme overrides — next-themes sets data-theme on <html> */
-[data-theme="light"] {
-  color-scheme: light;
-  --color-background: #f8f8f8;
-  --color-foreground: #0c0c0c;
-  --color-text-primary: #0c0c0c;
-  --color-text-secondary: #525252;
-  --color-text-tertiary: #737373;
-  --color-border: #e4e4e7;
-  --color-hover: #f4f4f5;
-  --color-bg-subtle: #ebebeb;
-  --color-hover-bg: #e0e0e0;
+/* Dark theme overrides — next-themes sets data-theme on <html> */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-background: #000;
+  --color-foreground: #ededed;
+  --color-text-primary: #ededed;
+  --color-text-secondary: #a1a1aa;
+  --color-text-tertiary: #71717a;
+  --color-border: #27272a;
+  --color-hover: #18181b;
+  --color-bg-subtle: #18181b;
+  --color-hover-bg: #27272a;
 }
 
 /* Smooth theme transitions — no flicker */
@@ -63,12 +63,12 @@ body {
 }
 
 ::selection {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.12);
   color: inherit;
 }
 
-[data-theme="light"] ::selection {
-  background: rgba(0, 0, 0, 0.12);
+[data-theme="dark"] ::selection {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 @layer utilities {
