@@ -120,7 +120,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 sm:gap-x-8 sm:gap-y-12">
 
             {/* Project Item */}
-            <div className="group flex flex-col gap-4 cursor-pointer relative">
+            <a href="https://github.com/kabir2004/Spore-" target="_blank" rel="noopener noreferrer" className="group flex flex-col gap-4 cursor-pointer relative">
               <div>
                 <h3 className="font-medium group-hover:text-text-primary transition-colors">Spore</h3>
                 <p className="text-sm text-text-secondary mt-1 leading-relaxed">
@@ -128,10 +128,10 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex items-center justify-between text-text-tertiary group-hover:text-text-secondary transition-colors mt-auto pt-4">
-                <Code2 size={16} />
+                <Github size={16} />
                 <ArrowUpRight size={16} />
               </div>
-            </div>
+            </a>
 
             {/* Project Item */}
             <a href="https://github.com/kabir2004/GitScope" target="_blank" rel="noopener noreferrer" className="group flex flex-col gap-4 cursor-pointer relative">
