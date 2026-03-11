@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     "Kabir Saamir is a Canadian software developer at Sterling Mutuals and studying computer science at Wilfrid Laurier University.",
   authors: [{ name: "Kabir Saamir" }],
   robots: "index,follow",
+  icons: {
+    icon: "/raccoon.png",
+    apple: "/raccoon.png",
+  },
   openGraph: {
     type: "website",
     title: "Kabir Saamir",
@@ -25,12 +29,14 @@ export const metadata: Metadata = {
     url: "https://kabirsaamir.com",
     siteName: "Kabir Saamir",
     locale: "en_US",
+    images: [{ url: "/raccoon.png", width: 512, height: 512, alt: "Kabir Saamir" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kabir Saamir",
     description:
       "Canadian software developer at Sterling Mutuals, studying at Wilfrid Laurier University.",
+    images: ["/raccoon.png"],
   },
 };
 
@@ -46,7 +52,7 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/raccoon.png" type="image/png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
