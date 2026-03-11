@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight, Code2 } from "lucide-react";
+import { ArrowUpRight, Code2, Github } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
@@ -134,18 +134,18 @@ export default function Home() {
             </div>
 
             {/* Project Item */}
-            <div className="group flex flex-col gap-4 cursor-pointer relative">
+            <a href="https://github.com/kabir2004/GitScope" target="_blank" rel="noopener noreferrer" className="group flex flex-col gap-4 cursor-pointer relative">
               <div>
-                <h3 className="font-medium group-hover:text-text-primary transition-colors">GitWrapped</h3>
+                <h3 className="font-medium group-hover:text-text-primary transition-colors">GitScope</h3>
                 <p className="text-sm text-text-secondary mt-1 leading-relaxed">
                   Visualize your GitHub activity with personalized stats and insights.
                 </p>
               </div>
               <div className="flex items-center justify-between text-text-tertiary group-hover:text-text-secondary transition-colors mt-auto pt-4">
-                <Code2 size={16} />
+                <Github size={16} />
                 <ArrowUpRight size={16} />
               </div>
-            </div>
+            </a>
 
             {/* Project Item */}
             <div className="group flex flex-col gap-4 cursor-pointer relative">
