@@ -43,7 +43,7 @@ export default function Home() {
             </div>
             <div className="sm:max-w-[320px] sm:text-right">
               <p className="text-sm text-text-secondary leading-relaxed">
-                hi, this is a space showcasing my work. currently an engineer based in toronto.
+                hi, this is a space showcasing my work. currently a software developer based in toronto.
               </p>
               <div className="flex flex-wrap gap-3 sm:gap-4 sm:justify-end mt-4 text-sm font-mono text-text-tertiary">
                 <a href="https://www.linkedin.com/in/kabir-saamir-6890b2246" target="_blank" className="hover:text-text-primary transition-colors">LinkedIn</a>
