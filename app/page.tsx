@@ -162,18 +162,18 @@ export default function Home() {
             </a>
 
             {/* Project Item */}
-            <div className="group flex flex-col gap-4 cursor-pointer relative">
+            <a href="https://github.com/kabir2004/WiseDrive" target="_blank" rel="noopener noreferrer" className="group flex flex-col gap-4 cursor-pointer relative">
               <div>
-                <h3 className="font-medium group-hover:text-text-primary transition-colors">ResDex</h3>
+                <h3 className="font-medium group-hover:text-text-primary transition-colors">WiseDrive</h3>
                 <p className="text-sm text-text-secondary mt-1 leading-relaxed">
-                  A mentorship platform connecting students with research opportunities.
+                  Free Ontario DriveTest prep. Practice tests, mock exams, flashcards, road signs, and progress tracking for G1, M1, and Commercial.
                 </p>
               </div>
               <div className="flex items-center justify-between text-text-tertiary group-hover:text-text-secondary transition-colors mt-auto pt-4">
-                <Code2 size={16} />
+                <Github size={16} />
                 <ArrowUpRight size={16} />
               </div>
-            </div>
+            </a>
 
           </div>
         </section>
