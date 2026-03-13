@@ -162,6 +162,25 @@ export default function Home() {
             </a>
 
             {/* Project Item */}
+            <a
+              href="https://github.com/kabir2004/BogCall"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col gap-4 cursor-pointer relative"
+            >
+              <div>
+                <h3 className="font-medium group-hover:text-text-primary transition-colors">BogCall</h3>
+                <p className="text-sm text-text-secondary mt-1 leading-relaxed">
+                  Wetland bioacoustics species detector. Identify species from audio in wetland environments.
+                </p>
+              </div>
+              <div className="flex items-center justify-between text-text-tertiary group-hover:text-text-secondary transition-colors mt-auto pt-4">
+                <Github size={16} />
+                <ArrowUpRight size={16} />
+              </div>
+            </a>
+
+            {/* Project Item */}
             <a href="https://github.com/kabir2004/WiseDrive" target="_blank" rel="noopener noreferrer" className="group flex flex-col gap-4 cursor-pointer relative">
               <div>
                 <h3 className="font-medium group-hover:text-text-primary transition-colors">WiseDrive</h3>
