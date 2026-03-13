@@ -84,7 +84,7 @@ export default function Home() {
                   <Image src="/kenedymedicalcliniclogo-removebg-preview.png" alt="Kennedy Medical Clinic" width={36} height={36} className="object-contain w-full h-full max-w-8 max-h-8 sm:max-w-9 sm:max-h-9" />
                 </div>
                 <div className="min-w-0">
-                  <h3 className="font-medium text-sm sm:text-base">Business Analyst Intern</h3>
+                  <h3 className="font-medium text-sm sm:text-base">Software Developer Intern</h3>
                   <p className="text-sm text-text-secondary mt-0.5">Kennedy Medical Clinic</p>
                   <p className="text-xs text-text-tertiary mt-1">Streamlining operations and systems for a smoother-running clinic</p>
                 </div>
@@ -101,7 +101,7 @@ export default function Home() {
                   <Image src="/tcpnetwroksolutions-removebg-preview.png" alt="TCP Network Services" width={36} height={36} className="object-contain w-full h-full max-w-8 max-h-8 sm:max-w-9 sm:max-h-9" />
                 </div>
                 <div className="min-w-0">
-                  <h3 className="font-medium text-sm sm:text-base">Information Technology Intern</h3>
+                  <h3 className="font-medium text-sm sm:text-base">Software Developer Intern</h3>
                   <p className="text-sm text-text-secondary mt-0.5">TCP Network Services</p>
                   <p className="text-xs text-text-tertiary mt-1">Supporting IT infrastructure and operations</p>
                 </div>
