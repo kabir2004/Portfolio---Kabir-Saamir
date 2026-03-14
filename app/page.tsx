@@ -194,6 +194,20 @@ export default function Home() {
               </div>
             </a>
 
+            {/* Project Item */}
+            <a href="https://github.com/kabir2004/SwishBot" target="_blank" rel="noopener noreferrer" className="group flex flex-col gap-4 cursor-pointer relative">
+              <div>
+                <h3 className="font-medium group-hover:text-text-primary transition-colors">SwishBot</h3>
+                <p className="text-sm text-text-secondary mt-1 leading-relaxed">
+                  Personalized NBA fantasy basketball insights via SMS. Start/sit lineup advice, waiver alerts, game recaps, and roster management. No app, just text.
+                </p>
+              </div>
+              <div className="flex items-center justify-between text-text-tertiary group-hover:text-text-secondary transition-colors mt-auto pt-4">
+                <Github size={16} />
+                <ArrowUpRight size={16} />
+              </div>
+            </a>
+
           </div>
         </section>
 
