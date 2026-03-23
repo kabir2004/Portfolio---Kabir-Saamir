@@ -95,7 +95,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-xs text-text-tertiary font-mono shrink-0 group-hover:text-text-secondary transition-colors text-right">
-                Now - Present
+                March 2026 - Present
               </div>
             </div>
 
