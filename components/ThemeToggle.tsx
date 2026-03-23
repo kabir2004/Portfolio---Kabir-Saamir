@@ -26,7 +26,7 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="w-10 h-10 rounded-full flex items-center justify-center border border-border bg-background text-text-secondary hover:text-text-primary hover:border-text-tertiary transition-colors duration-300 shrink-0 focus:outline-none focus:ring-2 focus:ring-text-tertiary focus:ring-offset-2 focus:ring-offset-background overflow-hidden"
+      className="w-10 h-10 rounded-full flex items-center justify-center border border-border bg-background text-text-secondary transition-theme hover:text-text-primary hover:border-text-tertiary shrink-0 focus:outline-none focus:ring-2 focus:ring-text-tertiary focus:ring-offset-2 focus:ring-offset-background overflow-hidden"
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
     >
       <AnimatePresence mode="wait" initial={false}>
@@ -35,7 +35,7 @@ export function ThemeToggle() {
           initial={{ opacity: 0, rotate: -45, scale: 0.6 }}
           animate={{ opacity: 1, rotate: 0, scale: 1 }}
           exit={{ opacity: 0, rotate: 45, scale: 0.6 }}
-          transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
+          transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
           style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
         >
           {isDark ? (

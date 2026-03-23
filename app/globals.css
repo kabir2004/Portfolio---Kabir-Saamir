@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* next-themes uses data-theme on <html>; map Tailwind dark: to match it */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 @theme {
   --color-background: #f8f8f8;
   --color-foreground: #0c0c0c;
@@ -17,9 +20,11 @@
   --font-mono: ui-monospace, monospace;
 }
 
-/* Light is default */
+/* Light is default — shared theme motion (text + surfaces stay in sync) */
 :root {
   color-scheme: light;
+  --theme-transition-duration: 240ms;
+  --theme-transition-timing: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* Dark theme overrides — next-themes sets data-theme on <html> */
@@ -36,14 +41,42 @@
   --color-hover-bg: #27272a;
 }
 
-/* Smooth theme transitions — no flicker */
-*,
-*::before,
-*::after {
-  transition-property: color, background-color, border-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 0.4s;
-  transition-delay: 0s;
+/* Page chrome follows theme (overscroll / iOS safe areas) */
+html {
+  background-color: var(--color-background);
+}
+
+/* Smooth theme transitions — color first so type feels locked to the palette */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    transition: background-color var(--theme-transition-duration)
+      var(--theme-transition-timing);
+  }
+
+  body {
+    transition: color var(--theme-transition-duration) var(--theme-transition-timing),
+      background-color var(--theme-transition-duration) var(--theme-transition-timing);
+  }
+
+  *:not(img):not(video):not(canvas):not(picture),
+  *:not(img):not(video):not(canvas):not(picture)::before,
+  *:not(img):not(video):not(canvas):not(picture)::after {
+    transition-property: color, background-color, border-color, fill, stroke, box-shadow;
+    transition-duration: var(--theme-transition-duration);
+    transition-timing-function: var(--theme-transition-timing);
+    transition-delay: 0s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body,
+  *:not(img):not(video):not(canvas):not(picture),
+  *:not(img):not(video):not(canvas):not(picture)::before,
+  *:not(img):not(video):not(canvas):not(picture)::after {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
 }
 
 /* Avoid transition on first paint so we don't animate from default to saved theme */
@@ -74,5 +107,17 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Match interactive controls to global theme timing */
+  .transition-theme {
+    transition-property: color, background-color, border-color, fill, stroke, box-shadow;
+    transition-duration: var(--theme-transition-duration);
+    transition-timing-function: var(--theme-transition-timing);
+  }
+
+  .duration-theme {
+    transition-duration: var(--theme-transition-duration);
+    transition-timing-function: var(--theme-transition-timing);
   }
 }

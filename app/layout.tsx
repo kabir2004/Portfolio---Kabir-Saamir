@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://kabirsaamir.com"),
   title: "Kabir Saamir",
   description:
-    "Kabir Saamir is a Canadian software developer at Sterling Mutuals and studying computer science at Wilfrid Laurier University.",
+    "Kabir Saamir is a Canadian software engineer at Fleetii, studying computer science at Wilfrid Laurier University.",
   authors: [{ name: "Kabir Saamir" }],
   robots: "index,follow",
   icons: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Kabir Saamir",
     description:
-      "Canadian software developer at Sterling Mutuals, studying at Wilfrid Laurier University.",
+      "Software engineer at Fleetii, studying at Wilfrid Laurier University.",
     url: "https://kabirsaamir.com",
     siteName: "Kabir Saamir",
     locale: "en_US",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kabir Saamir",
     description:
-      "Canadian software developer at Sterling Mutuals, studying at Wilfrid Laurier University.",
+      "Software engineer at Fleetii, studying at Wilfrid Laurier University.",
     images: ["/raccoon.png"],
   },
 };

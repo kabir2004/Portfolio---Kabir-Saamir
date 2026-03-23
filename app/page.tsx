@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { ArrowUpRight, Code2, Github } from "lucide-react";
+import { ArrowUpRight, Github } from "lucide-react";
+import { FleetiiLogo } from "@/components/FleetiiLogo";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
@@ -24,8 +25,14 @@ export default function Home() {
               </p>
             </div>
             <div className="text-right text-xs sm:text-sm text-text-tertiary shrink-0">
-              <p>sde / analyst @ <span className="text-[#1e3a5f] dark:text-[#3b82c6]">Sterling Mutuals</span></p>
-              <p>BSc @ <span className="text-[#3b0764] dark:text-purple-700">Laurier</span></p>
+              <p>
+                swe @ <span className="text-black dark:text-white">Fleetii</span>
+              </p>
+              <p>
+                sde / analyst @{" "}
+                <span className="text-[#3b82c6]">Sterling Mutuals</span>
+              </p>
+              <p>BSc @ <span className="text-[#a855f7]">Laurier</span></p>
             </div>
           </div>
 
@@ -43,12 +50,20 @@ export default function Home() {
             </div>
             <div className="sm:max-w-[320px] sm:text-right">
               <p className="text-sm text-text-secondary leading-relaxed">
-                hi, this is a space showcasing my work. currently a software developer based in toronto.
+                hi, this is a space showcasing my work. currently a software engineer based in toronto.
               </p>
               <div className="flex flex-wrap gap-3 sm:gap-4 sm:justify-end mt-4 text-sm font-mono text-text-tertiary">
                 <a href="https://www.linkedin.com/in/kabir-saamir-6890b2246" target="_blank" className="hover:text-text-primary transition-colors">LinkedIn</a>
                 <a href="https://github.com/kabir2004" target="_blank" className="hover:text-text-primary transition-colors">GitHub</a>
-<a href="mailto:kabir.saamir@gmail.com" className="hover:text-text-primary transition-colors">Email</a>
+                <a href="mailto:kabir.saamir@gmail.com" className="hover:text-text-primary transition-colors">Email</a>
+                <a
+                  href="https://kabirsaamir.substack.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-text-primary transition-colors"
+                >
+                  Substack
+                </a>
               </div>
             </div>
           </div>
@@ -64,11 +79,40 @@ export default function Home() {
             <div className="flex justify-between items-start gap-4 group">
               <div className="flex gap-3 sm:gap-4 min-w-0 flex-1">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-md flex-shrink-0 flex items-center justify-center overflow-hidden bg-background border border-border">
+                  <FleetiiLogo className="object-contain w-full h-full" />
+                </div>
+                <div className="min-w-0">
+                  <h3 className="font-medium text-sm sm:text-base">Software Engineer</h3>
+                  <div className="mt-0.5 flex flex-wrap items-center gap-2">
+                    <span className="text-sm text-text-secondary">Fleetii</span>
+                    <span className="inline-flex items-center rounded-md border border-orange-400 bg-orange-400/25 px-1.5 py-0.5 text-[10px] font-medium text-text-tertiary dark:border-orange-400 dark:bg-orange-500/35 dark:text-orange-50">
+                      Startup
+                    </span>
+                  </div>
+                  <p className="text-xs text-text-tertiary mt-1">
+                    Spend, invoicing, and carrier payments for logistics.
+                  </p>
+                </div>
+              </div>
+              <div className="text-xs text-text-tertiary font-mono shrink-0 group-hover:text-text-secondary transition-colors text-right">
+                Now - Present
+              </div>
+            </div>
+
+            {/* Experience Item */}
+            <div className="flex justify-between items-start gap-4 group">
+              <div className="flex gap-3 sm:gap-4 min-w-0 flex-1">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-md flex-shrink-0 flex items-center justify-center overflow-hidden bg-background border border-border">
                   <Image src="/sterlingmutualslogo-removebg-preview.png" alt="Sterling Mutuals" width={36} height={36} className="object-contain w-full h-full max-w-8 max-h-8 sm:max-w-9 sm:max-h-9" />
                 </div>
                 <div className="min-w-0">
                   <h3 className="font-medium text-sm sm:text-base">Software Developer / Analyst</h3>
-                  <p className="text-sm text-text-secondary mt-0.5">Sterling Mutuals</p>
+                  <div className="mt-0.5 flex flex-wrap items-center gap-2">
+                    <span className="text-sm text-text-secondary">Sterling Mutuals</span>
+                    <span className="inline-flex items-center rounded-md border border-blue-400 bg-blue-400/25 px-1.5 py-0.5 text-[10px] font-medium text-text-tertiary dark:border-blue-400 dark:bg-blue-500/35 dark:text-blue-50">
+                      Mutual Fund Dealer
+                    </span>
+                  </div>
                   <p className="text-xs text-text-tertiary mt-1">Building financial advisor platforms</p>
                 </div>
               </div>
@@ -85,7 +129,12 @@ export default function Home() {
                 </div>
                 <div className="min-w-0">
                   <h3 className="font-medium text-sm sm:text-base">Software Developer Intern</h3>
-                  <p className="text-sm text-text-secondary mt-0.5">Kennedy Medical Clinic</p>
+                  <div className="mt-0.5 flex flex-wrap items-center gap-2">
+                    <span className="text-sm text-text-secondary">Kennedy Medical Clinic</span>
+                    <span className="inline-flex items-center rounded-md border border-emerald-400 bg-emerald-400/25 px-1.5 py-0.5 text-[10px] font-medium text-text-tertiary dark:border-emerald-400 dark:bg-emerald-500/35 dark:text-emerald-50">
+                      Clinic
+                    </span>
+                  </div>
                   <p className="text-xs text-text-tertiary mt-1">Streamlining operations and systems for a smoother-running clinic</p>
                 </div>
               </div>
@@ -102,7 +151,12 @@ export default function Home() {
                 </div>
                 <div className="min-w-0">
                   <h3 className="font-medium text-sm sm:text-base">Software Developer Intern</h3>
-                  <p className="text-sm text-text-secondary mt-0.5">TCP Network Services</p>
+                  <div className="mt-0.5 flex flex-wrap items-center gap-2">
+                    <span className="text-sm text-text-secondary">TCP Network Services</span>
+                    <span className="inline-flex items-center rounded-md border border-cyan-400 bg-cyan-400/25 px-1.5 py-0.5 text-[10px] font-medium text-text-tertiary dark:border-cyan-400 dark:bg-cyan-500/35 dark:text-cyan-50">
+                      Cybersecurity Firm
+                    </span>
+                  </div>
                   <p className="text-xs text-text-tertiary mt-1">Supporting IT infrastructure and operations</p>
                 </div>
               </div>
