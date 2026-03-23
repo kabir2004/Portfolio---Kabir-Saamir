@@ -90,7 +90,7 @@ export default function Home() {
                     </span>
                   </div>
                   <p className="text-xs text-text-tertiary mt-1">
-                    Spend, invoicing, and carrier payments for logistics.
+                    Building a logistics platform for spend, invoicing, and carrier payments.
                   </p>
                 </div>
               </div>
